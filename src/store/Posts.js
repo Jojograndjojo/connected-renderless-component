@@ -6,6 +6,7 @@ const state = {
 const actions = {
     addPost( { commit }, newPost ) {
         commit( 'addPost', newPost );
+        commit( 'setMessage', '' );
     },
     deletePost( { commit }, index ) {
         commit( 'deletePost', index );
